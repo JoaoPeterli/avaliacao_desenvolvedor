@@ -1,24 +1,29 @@
-<table class="table">
+<table class="table"> <br />
+  <%= link_to "Documentos", documents_path, :class=>'btn btn-primary' %>
   <thead class="thead-dark">
     <tr>
       <th scope="col">Comprador</th>
       <th scope="col">Descrição</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Quantidade</th>
       <th scope="col">Endereço</th>
-      <th scope="col">Fornecedor</th>
+      <th scope="col">Fornecedor</th>  
+      <th scope="col">Quantidade</th> 
+      <th scope="col">Preço</th>
     </tr>
   </thead>
   <tbody>
-   <%# <% @shopping.each do |purchase| %>
-   <%#    <tr>
-   <%#      <td><%= purchase.comprador %></td>
-   <%#      <td><%= purchase.descricao %></td>
-   <%#      <td><%= purchases.preco %></td>
-   <%#      <td><%= purchases.quantidade %></td>
-   <%#      <td><%= purchase.endereco %></td>
-   <%#      <td><%= purchase.fornecedor %></td>
-   <%#    </tr>
-   <%#  <% end %>
-  </tbody>
+   <% @shopping.each do |purchase| %>
+      <tr>
+        <td><%= purchase.comprador %></td>
+        <td><%= purchase.descricao %></td>
+        <td><%= purchase.endereco %></td>
+        <td><%= purchase.fornecedor %></td>
+        <td><%= purchase.quantidade %></td>
+        <td><%= purchase.preco %></td>
+      </tr>
+   <% end %>
+  </tbody>  
 </table>
+
+<div class="panel panel-default">
+  <div class="panel-body">Valor Total: <%= @total_preco%></div>
+</div>

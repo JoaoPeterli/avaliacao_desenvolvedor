@@ -3,8 +3,8 @@ class CreatePurchases < ActiveRecord::Migration[5.2]
     create_table :purchases do |t|
       t.string :comprador  
       t.string :descricao 
-      t.string :preco 
-      t.string :quantidade 
+      t.float  :preco 
+      t.integer :quantidade 
       t.string :endereco 
       t.string :fornecedor   
       t.timestamps

@@ -1,6 +1,7 @@
 class ShoppingController < ApplicationController
 
   def index
-   @shopping = ''
+    @shopping = Purchase.all 
+    @total_preco = Purchase.total
   end
 end
