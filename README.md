@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Require
+```
+ * Docker
+ * Docker Compose
+```
 
-Things you may want to cover:
+###### Essas instruções farão com que você tenha uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
 
-* Ruby version
+&nbsp;
+### 1. Clone este repositório
+```
+git clone git@github.com:JoaoPeterli/avaliacao_desenvolvedor.git
+```
 
-* System dependencies
+### 2. Construa com docker!
+```
+docker-compose up --build
+docker-compose up
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
